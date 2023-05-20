@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image classification</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+      <form action="/predict" method="post" enctype="multipart/form-data">
+          <div class="background-animation"></div>
+          <div class="card">
+            <h1>Fruits fresh and rotten for classification</h1>
+            <img src="images/img.png" alt="#0000ff"/>
+            <div class="upload-btn-wrapper">
+              <button class="btn">Choose File</button>
+              <input type="file" name="file" id="pwd" accept="image/*" />
+            </div>
+          </br></br></br>
+            <button type="submit">Submit</button>
+          </div>
+      </form>
+  </body>
+</html>

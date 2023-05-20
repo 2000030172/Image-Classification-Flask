@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image classification</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <form>
+      <div class="background-animation"></div>
+      <div class="card">
+            <p style="font-size: xx-large;">File uploaded successfully</p>
+            <hr size="3" width="96%" color="blueviolet">
+            <hr size="5" width="96%" color="blue">
+            <hr size="3" width="96%" color="blueviolet">
+            <br/>
+            <br/>
+            <table>
+            <tr> <th>File Name:</th> <td>{{ file_name }}</td></tr>
+            <tr> <th>File Location:</th> <td>{{ file_loc }}</td></tr>
+            <tr> <th>Model Prediction:</th> <td>{{ predition }}</td></tr>
+            </table>
+            <br/>
+            <br/>
+            <img src="{{ image }}" alt="Uploaded Image">
+      </br></br></br>
+      <a href="/"><button>Back</button></a>
+      </div>
+  </body>
+</html>
